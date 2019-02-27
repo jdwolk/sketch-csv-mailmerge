@@ -1,0 +1,21 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "CSV Mail Merge",
+      "identifier": "csv-mailmerge",
+      "script": "./my-command.js"
+    }
+  ],
+  "menu": {
+    "isRoot": true,
+    "title": "csv-mailmerge",
+    "items": [
+      "csv-mailmerge"
+    ]
+  },
+  "name": "CSV Mail Merge",
+  "description": "Import data from a .csv using {} text sections. Also imports images"
+}
