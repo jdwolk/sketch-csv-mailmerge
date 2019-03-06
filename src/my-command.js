@@ -133,7 +133,7 @@ const CsvMailmerge = () => {
       promptForCsv((rows) => {
         R.addIndex(R.forEach)((row, i) => {
           applyToNewArtboard(row, artboard, i)
-        }, rows.slice(0, -1)) // last row is header so we want to ignore it
+        }, rows)
       })
     } else {
       showSelectionError()

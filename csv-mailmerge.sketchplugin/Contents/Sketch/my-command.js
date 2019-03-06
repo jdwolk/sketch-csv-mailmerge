@@ -17615,7 +17615,7 @@ var CsvMailmerge = function CsvMailmerge() {
       promptForCsv(function (rows) {
         ramda__WEBPACK_IMPORTED_MODULE_2__["addIndex"](ramda__WEBPACK_IMPORTED_MODULE_2__["forEach"])(function (row, i) {
           applyToNewArtboard(row, artboard, i);
-        }, rows.slice(0, -1)); // last row is header so we want to ignore it
+        }, rows);
       });
     } else {
       showSelectionError();

@@ -18,7 +18,7 @@
   },
   "name": "CSV Mail Merge",
   "description": "Import data from a .csv using {} text sections. Also imports images",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "identifier": "CSV Mail Merge",
   "disableCocoaScriptPreprocessor": true,
   "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
