@@ -48,6 +48,10 @@ const CsvMailmerge = () => {
     const widthOffset = (pixelsBetweenArtboards * indexOffset) + (baseArtboard.frame.width * indexOffset)
     const duplicatedText = textLayers(duplicated)
 
+    if (line.artboard) {
+      duplicated.name = line.artboard
+    }
+
     const applyToMatchingTexts = R.curry((fn, key, val) => {
       const matchingTextLayers = textsMatching(`{${key}}`, duplicatedText)
       R.forEach((textLayer) => fn(textLayer, key, val), matchingTextLayers)

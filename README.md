@@ -14,7 +14,7 @@ A lightweight Sketch plugin for importing data from .csv files using "{}" text s
 
 (*NOTE*: I highly recommend you save a backup of your sketch file before you run the plugin. This hasn't been tested extensively and I have no idea if it'll destroy your precious project. Works like a charm for me though ;P)
 
-1. Download a .csv file with your data. Make sure it includes a header row with field names.
+1. Download a .csv file with your data. Make sure it includes a header row with field names. If you'd like to use a custom name for the generated artboards, include a column with name "artboard".
 1. Create a sketch file
   * Wherever you want to substitute in data make a text layer like `{field}`.
   * When the plugin is run it will match the text area named `{field}` with a value from the "field" column in the .csv

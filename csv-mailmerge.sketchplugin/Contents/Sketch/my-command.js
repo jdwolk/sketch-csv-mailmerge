@@ -17524,6 +17524,11 @@ var CsvMailmerge = function CsvMailmerge() {
     var indexOffset = index + 1;
     var widthOffset = pixelsBetweenArtboards * indexOffset + baseArtboard.frame.width * indexOffset;
     var duplicatedText = textLayers(duplicated);
+
+    if (line.artboard) {
+      duplicated.name = line.artboard;
+    }
+
     var applyToMatchingTexts = ramda__WEBPACK_IMPORTED_MODULE_2__["curry"](function (fn, key, val) {
       var matchingTextLayers = textsMatching("{".concat(key, "}"), duplicatedText);
       ramda__WEBPACK_IMPORTED_MODULE_2__["forEach"](function (textLayer) {
