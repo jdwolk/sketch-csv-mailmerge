@@ -25,7 +25,7 @@
   "dependencies": {
     "@skpm/dialog": "^0.2.5",
     "@skpm/fs": "^0.2.4",
-    "papaparse": "^4.6.3",
+    "papaparse": "^5.2.0",
     "ramda": "^0.26.1"
   }
 }
